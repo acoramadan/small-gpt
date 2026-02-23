@@ -19,7 +19,7 @@ n = int(0.8*len(data))
 train_data = data[:n]
 val_data = data[n:]
 
-model = BigramLanguageModel(vocab_size)
+model = BigramLanguageModel(vocab_size, u.N_EMBD, u.BLOCK_SIZE, u.DEVICE)
 m = model.to(u.DEVICE)
 
 optim = torch.optim.AdamW(model.parameters(), lr=1e-3)

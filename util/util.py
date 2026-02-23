@@ -5,6 +5,7 @@ BLOCK_SIZE = 8
 MAX_ITERS = 10000
 EVAL_INTERVAL = 300
 EVAL_ITERS = 200
+N_EMBD = 32
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 
